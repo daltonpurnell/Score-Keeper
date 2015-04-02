@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+//UIImageView *BackgroundImage;
+
 @interface SKViewController : UIViewController
 
 @end

@@ -22,6 +22,7 @@ static CGFloat HeightOfScoreView = 90;
 @property (nonatomic, strong) UIScrollView *myScrollView;
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, strong) UILabel *score;
+@property (nonatomic, strong) UIStepper *stepper;
 
 // Step 4: Store your scoreLabels. Create a mutable array property called scoreLabels
 @property (nonatomic, strong) NSMutableArray *scoreLabels;
@@ -36,6 +37,10 @@ static CGFloat HeightOfScoreView = 90;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    BackgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"blurrybackground.png"]];
+//    [self.view addSubview:BackgroundImage];
+//    [BackgroundImage.superview sendSubviewToBack:BackgroundImage];
+    
     // Add a scrollView property to your class
     UIScrollView *myScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
@@ -44,7 +49,7 @@ static CGFloat HeightOfScoreView = 90;
     
     // Initialize the scrollView and add it to the main view of SKViewController
         [self.view addSubview:myScrollView];
-    self.myScrollView = myScrollView;
+        self.myScrollView = myScrollView;
     
     for (NSInteger i = 0; i < 4; i++) {
         [self addScoreView:i];
@@ -133,11 +138,10 @@ static CGFloat HeightOfScoreView = 90;
     double value = [stepper value];
     
 // Get the label from the array of labels that is at the index matching the tag of stepper
-    UILabel *score = self.scoreLabels[index];
+    self.score = self.scoreLabels[index];
     
 // Update the text of the label to match the value of the stepper
-    score.text = [NSString stringWithFormat:@"%d", (int)value];
-    
+    self.score.text = [NSString stringWithFormat:@"%d", (int)value];
 }
 
 // Step 5: Dismiss the keyboard when done editing name.

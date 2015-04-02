@@ -20,6 +20,7 @@
 		71DEBF371924955A0032F31F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71DEBF351924955A0032F31F /* InfoPlist.strings */; };
 		71DEBF391924955A0032F31F /* Score_KeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBF381924955A0032F31F /* Score_KeeperTests.m */; };
 		D735C5DD1ACD10D40088137A /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D735C5DC1ACD10D40088137A /* SKViewController.m */; };
+		D735C5DF1ACDD0920088137A /* blurrybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D735C5DE1ACDD0920088137A /* blurrybackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		71DEBF381924955A0032F31F /* Score_KeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Score_KeeperTests.m; sourceTree = "<group>"; };
 		D735C5DB1ACD10D40088137A /* SKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKViewController.h; path = ../SKViewController.h; sourceTree = "<group>"; };
 		D735C5DC1ACD10D40088137A /* SKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKViewController.m; path = ../SKViewController.m; sourceTree = "<group>"; };
+		D735C5DE1ACDD0920088137A /* blurrybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurrybackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		71DEBF1A1924955A0032F31F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D735C5DE1ACDD0920088137A /* blurrybackground.png */,
 				71DEBF1B1924955A0032F31F /* Score Keeper-Info.plist */,
 				71DEBF1C1924955A0032F31F /* InfoPlist.strings */,
 				71DEBF1F1924955A0032F31F /* main.m */,
@@ -227,6 +230,7 @@
 			files = (
 				71DEBF1E1924955A0032F31F /* InfoPlist.strings in Resources */,
 				71DEBF261924955A0032F31F /* Images.xcassets in Resources */,
+				D735C5DF1ACDD0920088137A /* blurrybackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
