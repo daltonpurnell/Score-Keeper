@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 DevMountain. All rights reserved.
 //
 
+#import "SKViewController.h"
 #import "SKAppDelegate.h"
 
 @implementation SKAppDelegate
@@ -16,9 +17,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 
-    UINavigationController *navigationController = [[UINavigationController alloc] init];
+    // initialize a UINavigationController with a SKViewController instance as the rootViewController
     
+    SKViewController *viewController = [SKViewController new];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    // Make the navigationController the rootViewController of the window
     self.window.rootViewController = navigationController;
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
     
