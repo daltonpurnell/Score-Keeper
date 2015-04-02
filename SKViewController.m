@@ -16,11 +16,12 @@ static CGFloat margin = 20;
 static CGFloat HeightOfScoreView = 90;
 
 
-@interface SKViewController ()
+@interface SKViewController () <UITextFieldDelegate>
 
 // set steppper, text field, scrollview, and label as global properties here so they can be used in more than one method
 @property (nonatomic, strong) UIScrollView *myScrollView;
 @property (nonatomic, strong) UIView *view;
+@property (nonatomic, strong) UILabel *score;
 
 // Step 4: Store your scoreLabels. Create a mutable array property called scoreLabels
 @property (nonatomic, strong) NSMutableArray *scoreLabels;
@@ -72,6 +73,8 @@ static CGFloat HeightOfScoreView = 90;
     
     // Set self as the delegate of the nameTextField.
     name.delegate = self;
+    
+    // Set placeholder text for text field
     name.placeholder = @"Name";
     name.font = [UIFont italicSystemFontOfSize:20];
     
